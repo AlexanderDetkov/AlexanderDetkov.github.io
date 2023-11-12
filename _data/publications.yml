@@ -1,0 +1,16 @@
+main:
+  - title: Reparameterization through Spatial Gradient Scaling
+    authors: <strong>Alexander Detkov</strong>, Mohammad Salameh, Muhammad Fetrat Qharabagh, Jialin Zhang, Wei Lui, Shangling Jui, Di Niu
+    conference_short: ICLR
+    conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2303.02733.pdf
+    image: ./assets/img/reparameterization.png
+    notes: Poster
+
+  - title: "Imbibition of a Single Polymer into a Nanocapillary"
+    authors: <strong>Alexander Detkov</strong>, Wylie Stroberg
+    conference_short: CSME
+    conference: Canadian Society for Mechanical Engineering <strong>(CSME)</strong>, 2022.
+    pdf: https://era.library.ualberta.ca/items/a5af23a2-e732-4d4a-92f3-d79d1dd4b08f/download/a331a02d-4e15-465f-a60c-400d27c6412a
+    image: ./assets/img/imbibition.png
+    notes: Oral Presentation

@@ -1,0 +1,10 @@
+  126  cd web3
+  127  ls -latr
+  128  git clone https://github.com/andreydetkov/testweb
+  129  ls -latr
+  130  cd testweb
+  131  ls -latr
+  132  bundle exec jekyll serve
+  133  bundle install
+  134  bundle exec jekyll serve
+  135  history |tail > cmds
