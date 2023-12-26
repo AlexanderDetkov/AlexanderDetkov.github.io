@@ -3,11 +3,11 @@ layout: homepage
 ---
 
 ## Alexander Detkov
-Hello, my name is Alex, and I'm currently in the final year of my undergraduate degree in Engineering Physics and Mathematics at the [University of Alberta](https://www.ualberta.ca). I am interested in making deep learning more trustworthy and robust by incorporating symbolic reasoning, interpretability, and inductive biases. I am also very excited about AI-driven scientific discovery in the natural sciences. Ultimately, I wish to work and contribute towards a cognitive "System 2" artificial intelligence.
+Hello, my name is Alex, and I'm currently in the final year of my undergraduate degree in Engineering Physics and Mathematics at the [University of Alberta](https://www.ualberta.ca). I am interested in making deep learning more trustworthy and robust by incorporating symbolic reasoning, interpretability, and inductive biases. I am also very excited about the opportunity to create innovative applications of artificial intelligence (AI) that advance our understanding of the natural sciences. Ultimately, I wish to work and contribute towards a cognitive "System 2" artificial intelligence.
 
 Currently, I am working with [Prof. Di Niu](https://sites.ualberta.ca/~dniu/Homepage/Home.html) on enhancing Graph Neural Network (GNN) performance and explainability with symbolic and reinforcement learning. Previously I interned at Huawei Research for a year working on hardware-aware Neural Architecture Search (NAS) and Convolutional Neural Networks (CNN).
 
-Outside of research, I enjoy reading and playing the piano. My all-time favorite novel is Roadside Picnic by Arkady and Boris Strugatsky. The classic paper by Eugene Wigner "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" is also a favorite of mine. The pinnacle of human creativity however has to go to Chopin and his "Fantaisie-Impromptu in C♯ Minor". Currently, I am reading “A New Kind of Science” by Stephen Wolfram which takes a novel computational perspective on fundamental physics.
+Outside of research, I enjoy reading and playing the piano. My all-time favorite novel is Roadside Picnic by Arkady and Boris Strugatsky. The classic paper by Eugene Wigner "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" is also a favorite of mine. Currently, I am reading “A New Kind of Science” by Stephen Wolfram which takes a novel computational perspective on fundamental physics. On the piano I am learning "Fantaisie-Impromptu in C♯ Minor" by Chopin. 
 
 ## Research Interests
 - **Artificial Intelligence:** AI Reasoning, Neuro-symbolic AI, Neural Architecture Search, Trustworthy and Explainable AI (XAI).
