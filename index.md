@@ -7,11 +7,11 @@ Hello, my name is Alex, and I'm currently in the final year of my undergraduate 
 
 Currently, I am working with [Prof. Di Niu](https://sites.ualberta.ca/~dniu/Homepage/Home.html) on enhancing Graph Neural Network (GNN) performance and explainability with symbolic and reinforcement learning. Previously I interned at Huawei Research for a year working on hardware-aware Neural Architecture Search (NAS) and Convolutional Neural Networks (CNN).
 
-Outside of research, I enjoy reading and playing the piano. My all-time favorite novel is Roadside Picnic by Arkady and Boris Strugatsky. The classic paper by Eugene Wigner "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" is also a favorite of mine. The pinnacle of human creativity however has to go to Chopin and his Fantaisie-Impromptu in C♯ Minor. Currently, I am reading “A New Kind of Science” by Stephen Wolfram which takes a novel computational perspective of fundamental physics.
+Outside of research, I enjoy reading and playing the piano. My all-time favorite novel is Roadside Picnic by Arkady and Boris Strugatsky. The classic paper by Eugene Wigner "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" is also a favorite of mine. The pinnacle of human creativity however has to go to Chopin and his "Fantaisie-Impromptu in C♯ Minor". Currently, I am reading “A New Kind of Science” by Stephen Wolfram which takes a novel computational perspective on fundamental physics.
 
 ## Research Interests
 - **Artificial Intelligence:** AI Reasoning, Neuro-symbolic AI, Neural Architecture Search, Trustworthy and Explainable AI (XAI).
-- **Deep Learning:** Foundation Models, Graph and Convolutional Neural Networks, Geometric Deep Learning.
+- **Deep Learning:** Foundation Models, Convolutional and Graph Neural Networks, Transformers, Geometric Deep Learning.
 - **Natural Sciences:** AI-Driven Scientific Discovery, Molecular Dynamics, Computational Physics.
 
 ## News
