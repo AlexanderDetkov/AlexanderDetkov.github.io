@@ -10,9 +10,9 @@ Currently, I am working with [Prof. Di Niu](https://sites.ualberta.ca/~dniu/Home
 Outside of research, I enjoy reading and playing the piano. My all-time favorite novel is Roadside Picnic by Arkady and Boris Strugatsky. The classic paper by Eugene Wigner "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" is also a favorite of mine. The pinnacle of human creativity however has to go to Chopin and his Fantaisie-Impromptu in C♯ Minor. Currently, I am reading “A New Kind of Science” by Stephen Wolfram which takes a novel computational perspective of fundamental physics.
 
 ## Research Interests
-- **Deep Learning:** Graph and Convolutional Neural Networks, Trustworthy and Explainable AI (XAI), Geometric Deep Learning.
-- **Artificial Intelligence:** Neuro-symbolic AI, Neural Architecture Search.
-- **Natural Sciences:** Computational Physics, Molecular Dynamics.
+- **Artificial Intelligence:** AI Reasoning, Neuro-symbolic AI, Neural Architecture Search, Trustworthy and Explainable AI (XAI).
+- **Deep Learning:** Foundation Models, Graph and Convolutional Neural Networks, Geometric Deep Learning.
+- **Natural Sciences:** AI-Driven Scientific Discovery, Molecular Dynamics, Computational Physics.
 
 ## News
 - **[May 2023]** Joined [Prof. Di Niu](https://sites.ualberta.ca/~dniu/Homepage/Home.html) to work on explainable Graph Neural Networks.
