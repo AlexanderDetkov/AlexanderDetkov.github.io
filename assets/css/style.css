@@ -297,14 +297,13 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__portrait { order: -1; justify-self: start; }
-  .hero__portrait img { width: 140px; }
+  .hero__portrait img { width: 112px; height: 112px; }
   .about { grid-template-columns: 1fr; }
   .factcard { position: static; }
   .cards { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
-  .nav__name { display: none; }
-  .nav__links { gap: .9rem; font-size: .9rem; }
+  .nav__links { display: none; }   /* single-page scroll; keep nav to brand + theme toggle */
   .pub { grid-template-columns: 1fr; }
   .pub__thumb { aspect-ratio: 16 / 7; max-height: 160px; }
   .timeline__item { grid-template-columns: 1fr; gap: .35rem; }
