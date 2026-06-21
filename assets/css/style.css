@@ -169,12 +169,12 @@ img { max-width: 100%; display: block; }
 
 .hero__portrait { justify-self: center; }
 .hero__portrait img {
-  width: clamp(190px, 24vw, 280px); aspect-ratio: 1; object-fit: cover; border-radius: 50%;
-  border: 1px solid var(--line); box-shadow: var(--shadow); rotate: 0deg;
+  width: 240px; height: 240px; object-fit: cover; border-radius: 50%;
+  border: 1px solid var(--line); box-shadow: var(--shadow);
 }
 
 /* --------------------------- Sections --------------------------- */
-.section { padding: clamp(3rem, 8vw, 6rem) 0; }
+.section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
 .section--alt { background: var(--bg-alt); border-block: 1px solid var(--line-soft); }
 .section__layout { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--pad); }
 .section__head { display: flex; align-items: baseline; gap: .9rem; margin-bottom: 2rem; }
