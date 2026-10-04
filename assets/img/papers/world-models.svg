@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Local map pieces glued into a global loop, with the missing piece inferred">
+<style>
+svg{--t-bg:#f6f7f8; --t-soft:#ebeef0; --t-ink:#2b2f35; --t-mute:#7d848c; --t-wire:#cfd4d9; --t-wall:#dcdfe3; --t-teal:#2a8b80; --t-orange:#d47b22; --t-tile:#ffffff; --serif:"Source Serif 4",Georgia,"Times New Roman",serif; --ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+@media (prefers-color-scheme: dark){svg{--t-bg:#1a1c1f; --t-soft:#23272b; --t-ink:#d3d6da; --t-mute:#8a9198; --t-wire:#3a3f45; --t-wall:#2c3035; --t-teal:#52b9ac; --t-orange:#ec9a48; --t-tile:#24282d;}}
+.t-bg{fill:var(--t-bg)}
+.t-soft{fill:var(--t-soft)}
+.t-node{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-teal line{stroke:var(--t-teal)} .t-teal polygon{fill:var(--t-teal)}
+.t-orange line{stroke:var(--t-orange)} .t-orange polygon{fill:var(--t-orange)}
+.t-mute-arrow line{stroke:var(--t-mute)} .t-mute-arrow polygon{fill:var(--t-mute)}
+.t-q{fill:var(--t-orange); font:600 15px/1 var(--serif)}
+.t-label{fill:var(--t-mute); font:500 9.5px/1 var(--ui); letter-spacing:.02em}
+.t-label--small{font-size:8.5px; font-style:italic}
+.t-bubble{fill:none; stroke:var(--t-mute)}
+.t-text{stroke:var(--t-teal)}
+.t-wire{stroke:var(--t-wire)}
+.t-hot{stroke:var(--t-teal)}
+.t-teal-fill{fill:var(--t-teal)}
+.t-grid{fill:none; stroke:var(--t-ink)}
+.t-op line{stroke:var(--t-ink)}
+.t-wall{fill:var(--t-wall)}
+.t-surface{stroke:var(--t-mute)}
+.t-solvent{fill:var(--t-teal); opacity:.38}
+.t-path{fill:none; stroke:var(--t-mute); opacity:.9}
+.t-bond{fill:none; stroke:var(--t-ink)}
+.t-bead{fill:var(--t-orange); stroke:var(--t-bg); stroke-width:.8}
+
+.t-wire-ink{fill:none; stroke:var(--t-mute)}
+.t-ink-fill{fill:var(--t-ink)}
+.t-box{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-op-mute line{stroke:var(--t-mute)}
+.t-lattice{fill:var(--t-wire)}
+.t-act{font:italic 600 10px/1 var(--serif)}
+.t-act--r{fill:var(--t-teal)} .t-act--f{fill:var(--t-orange)}
+.t-digit{fill:var(--t-ink); font:600 8px/1 var(--ui)}
+.t-digit--on{fill:var(--t-bg)}
+.t-liquid{fill:var(--t-teal); opacity:.15}
+.t-tank{fill:none; stroke:var(--t-ink)}
+.t-tube{fill:var(--t-wall); stroke:var(--t-ink)}
+.t-meniscus{fill:none; stroke:var(--t-teal)}
+
+.t-tile{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-tile-ghost{fill:none; stroke:var(--t-mute)}
+.t-state{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-arc-teal{stroke:var(--t-teal)}
+.t-arc-orange{stroke:var(--t-orange)}
+.t-wire-line{fill:none; stroke:var(--t-wire)}
+.t-patch{fill:var(--t-teal); opacity:.22}
+
+.t-bubble-solid{fill:var(--t-tile); stroke:var(--t-mute)}
+.t-outline{fill:none; stroke:var(--t-ink)}
+</style>
+<rect class="t-bg" x="0" y="0" width="160" height="100"/><g transform="rotate(-6 19.0 21.0)"><rect class="t-tile" x="8" y="10" width="22" height="22" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M16.36,32.00 A13.64,13.64 0 0 1 30.00,18.36" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle class="t-state" cx="16.36" cy="32.00" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="30.00" cy="18.36" r="3.3" stroke-width="1.3"/></g><g transform="rotate(5 50.0 36.0)"><rect class="t-tile" x="39" y="25" width="22" height="22" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M39.00,33.36 A13.64,13.64 0 0 1 52.64,47.00" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle class="t-state" cx="39.00" cy="33.36" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="52.64" cy="47.00" r="3.3" stroke-width="1.3"/></g><g transform="rotate(-4 23.0 61.0)"><rect class="t-tile" x="12" y="50" width="22" height="22" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M25.64,50.00 A13.64,13.64 0 0 1 12.00,63.64" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle class="t-state" cx="25.64" cy="50.00" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="12.00" cy="63.64" r="3.3" stroke-width="1.3"/></g><g class="t-mute-arrow"><line x1="69.0" y1="42.0" x2="82.9" y2="42.0" stroke-width="1.4" stroke-linecap="round"/><polygon points="87.0,42.0 82.4,44.8 82.4,39.2" stroke="none"/></g><text class="t-label t-label--small" x="78" y="35" text-anchor="middle">glue</text><rect class="t-tile-ghost" x="96" y="42" width="26" height="26" rx="2" stroke-width="1.2" stroke-dasharray="3 2.4"/><path class="t-arc-orange" d="M122.00,58.12 A16.12,16.12 0 0 1 105.88,42.00" stroke-width="2.2" stroke-linecap="round" fill="none" stroke-dasharray="3.4 2.8"/><rect class="t-tile" x="96" y="16" width="26" height="26" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M105.88,42.00 A16.12,16.12 0 0 1 122.00,25.88" stroke-width="2.4" stroke-linecap="round" fill="none"/><rect class="t-tile" x="122" y="16" width="26" height="26" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M122.00,25.88 A16.12,16.12 0 0 1 138.12,42.00" stroke-width="2.4" stroke-linecap="round" fill="none"/><rect class="t-tile" x="122" y="42" width="26" height="26" rx="2" stroke-width="1.2"/><path class="t-arc-teal" d="M138.12,42.00 A16.12,16.12 0 0 1 122.00,58.12" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle class="t-state" cx="105.88" cy="42.00" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="122.00" cy="25.88" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="138.12" cy="42.00" r="3.3" stroke-width="1.3"/><circle class="t-state" cx="122.00" cy="58.12" r="3.3" stroke-width="1.3"/><text class="t-q" x="102.5" y="66" text-anchor="middle">?</text><text class="t-label" x="35" y="93" text-anchor="middle">local</text><text class="t-label" x="122" y="93" text-anchor="middle">global</text></svg>

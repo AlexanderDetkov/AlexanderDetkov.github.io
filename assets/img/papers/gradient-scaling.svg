@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="A multi-branch block equals one convolution with scaled gradients">
+<style>
+svg{--t-bg:#f6f7f8; --t-soft:#ebeef0; --t-ink:#2b2f35; --t-mute:#7d848c; --t-wire:#cfd4d9; --t-wall:#dcdfe3; --t-teal:#2a8b80; --t-orange:#d47b22; --t-tile:#ffffff; --serif:"Source Serif 4",Georgia,"Times New Roman",serif; --ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+@media (prefers-color-scheme: dark){svg{--t-bg:#1a1c1f; --t-soft:#23272b; --t-ink:#d3d6da; --t-mute:#8a9198; --t-wire:#3a3f45; --t-wall:#2c3035; --t-teal:#52b9ac; --t-orange:#ec9a48; --t-tile:#24282d;}}
+.t-bg{fill:var(--t-bg)}
+.t-soft{fill:var(--t-soft)}
+.t-node{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-teal line{stroke:var(--t-teal)} .t-teal polygon{fill:var(--t-teal)}
+.t-orange line{stroke:var(--t-orange)} .t-orange polygon{fill:var(--t-orange)}
+.t-mute-arrow line{stroke:var(--t-mute)} .t-mute-arrow polygon{fill:var(--t-mute)}
+.t-q{fill:var(--t-orange); font:600 15px/1 var(--serif)}
+.t-label{fill:var(--t-mute); font:500 9.5px/1 var(--ui); letter-spacing:.02em}
+.t-label--small{font-size:8.5px; font-style:italic}
+.t-bubble{fill:none; stroke:var(--t-mute)}
+.t-text{stroke:var(--t-teal)}
+.t-wire{stroke:var(--t-wire)}
+.t-hot{stroke:var(--t-teal)}
+.t-teal-fill{fill:var(--t-teal)}
+.t-grid{fill:none; stroke:var(--t-ink)}
+.t-op line{stroke:var(--t-ink)}
+.t-wall{fill:var(--t-wall)}
+.t-surface{stroke:var(--t-mute)}
+.t-solvent{fill:var(--t-teal); opacity:.38}
+.t-path{fill:none; stroke:var(--t-mute); opacity:.9}
+.t-bond{fill:none; stroke:var(--t-ink)}
+.t-bead{fill:var(--t-orange); stroke:var(--t-bg); stroke-width:.8}
+
+.t-wire-ink{fill:none; stroke:var(--t-mute)}
+.t-ink-fill{fill:var(--t-ink)}
+.t-box{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-op-mute line{stroke:var(--t-mute)}
+.t-lattice{fill:var(--t-wire)}
+.t-act{font:italic 600 10px/1 var(--serif)}
+.t-act--r{fill:var(--t-teal)} .t-act--f{fill:var(--t-orange)}
+.t-digit{fill:var(--t-ink); font:600 8px/1 var(--ui)}
+.t-digit--on{fill:var(--t-bg)}
+.t-liquid{fill:var(--t-teal); opacity:.15}
+.t-tank{fill:none; stroke:var(--t-ink)}
+.t-tube{fill:var(--t-wall); stroke:var(--t-ink)}
+.t-meniscus{fill:none; stroke:var(--t-teal)}
+
+.t-tile{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-tile-ghost{fill:none; stroke:var(--t-mute)}
+.t-state{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-arc-teal{stroke:var(--t-teal)}
+.t-arc-orange{stroke:var(--t-orange)}
+.t-wire-line{fill:none; stroke:var(--t-wire)}
+.t-patch{fill:var(--t-teal); opacity:.22}
+
+.t-bubble-solid{fill:var(--t-tile); stroke:var(--t-mute)}
+.t-outline{fill:none; stroke:var(--t-ink)}
+</style>
+<rect class="t-bg" x="0" y="0" width="160" height="100"/><path class="t-wire-ink" d="M10,44 H14 M14,20 V68 M14,20 H19 M14,44 H19 M14,68 H19" stroke-width="1.2"/><path class="t-wire-ink" d="M43,20 H48 V68 M43,44 H48 M43,68 H48 M48,44 H49.5" stroke-width="1.2"/><circle class="t-ink-fill" cx="9" cy="44" r="2.2"/><rect class="t-box" x="19" y="12" width="24" height="16" rx="2.5" stroke-width="1.2"/><rect class="t-box" x="19" y="36" width="24" height="16" rx="2.5" stroke-width="1.2"/><rect class="t-box" x="19" y="60" width="24" height="16" rx="2.5" stroke-width="1.2"/><rect class="t-teal-fill" x="25" y="14" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="29" y="14" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="33" y="14" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="25" y="18" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="29" y="18" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="33" y="18" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="25" y="22" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="29" y="22" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="33" y="22" width="4" height="4" opacity="0.32"/><line class="t-grid" x1="29" y1="14" x2="29" y2="26" stroke-width="0.5"/><line class="t-grid" x1="33" y1="14" x2="33" y2="26" stroke-width="0.5"/><line class="t-grid" x1="25" y1="18" x2="37" y2="18" stroke-width="0.5"/><line class="t-grid" x1="25" y1="22" x2="37" y2="22" stroke-width="0.5"/><rect class="t-grid" x="25" y="14" width="12" height="12" stroke-width="0.9"/><rect class="t-teal-fill" x="29" y="38" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="29" y="42" width="4" height="4" opacity="0.32"/><rect class="t-teal-fill" x="29" y="46" width="4" height="4" opacity="0.32"/><line class="t-grid" x1="29" y1="42" x2="33" y2="42" stroke-width="0.5"/><line class="t-grid" x1="29" y1="46" x2="33" y2="46" stroke-width="0.5"/><rect class="t-grid" x="29" y="38" width="4" height="12" stroke-width="0.9"/><rect class="t-teal-fill" x="29" y="66" width="4" height="4" opacity="0.32"/><rect class="t-grid" x="29" y="66" width="4" height="4" stroke-width="0.9"/><circle class="t-node" cx="54" cy="44" r="4.5" stroke-width="1.2"/><path class="t-wire-ink" d="M51.4,44 H56.6 M54,41.4 V46.6" stroke-width="1.1"/><path class="t-wire-ink" d="M58.5,44 H65" stroke-width="1.2"/><g class="t-op-mute" stroke-width="1.6" stroke-linecap="round"><line x1="71" y1="41" x2="79" y2="41"/><line x1="71" y1="47" x2="79" y2="47"/></g><path class="t-wire-ink" d="M86,44 H100 M140,44 H152" stroke-width="1.2"/><circle class="t-ink-fill" cx="86" cy="44" r="2.2"/><rect class="t-box" x="100" y="24" width="40" height="40" rx="3" stroke-width="1.3"/><rect class="t-teal-fill" x="106.5" y="30.5" width="9" height="9" opacity="0.22"/><rect class="t-teal-fill" x="115.5" y="30.5" width="9" height="9" opacity="0.5"/><rect class="t-teal-fill" x="124.5" y="30.5" width="9" height="9" opacity="0.22"/><rect class="t-teal-fill" x="106.5" y="39.5" width="9" height="9" opacity="0.22"/><rect class="t-teal-fill" x="115.5" y="39.5" width="9" height="9" opacity="0.85"/><rect class="t-teal-fill" x="124.5" y="39.5" width="9" height="9" opacity="0.22"/><rect class="t-teal-fill" x="106.5" y="48.5" width="9" height="9" opacity="0.22"/><rect class="t-teal-fill" x="115.5" y="48.5" width="9" height="9" opacity="0.5"/><rect class="t-teal-fill" x="124.5" y="48.5" width="9" height="9" opacity="0.22"/><line class="t-grid" x1="115.5" y1="30.5" x2="115.5" y2="57.5" stroke-width="0.7"/><line class="t-grid" x1="124.5" y1="30.5" x2="124.5" y2="57.5" stroke-width="0.7"/><line class="t-grid" x1="106.5" y1="39.5" x2="133.5" y2="39.5" stroke-width="0.7"/><line class="t-grid" x1="106.5" y1="48.5" x2="133.5" y2="48.5" stroke-width="0.7"/><rect class="t-grid" x="106.5" y="30.5" width="27" height="27" stroke-width="1.2"/><text class="t-label" x="36" y="93" text-anchor="middle">multi-branch</text><text class="t-label" x="120" y="93" text-anchor="middle">scaled gradients</text></svg>
