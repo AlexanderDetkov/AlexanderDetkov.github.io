@@ -64,6 +64,9 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .bio p { text-wrap: pretty; }
 
 /* Papers: small figure, title, one-line summary, authors */
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.section-head h2 { margin: 0; }
+.eq-note { font-size: .82rem; color: var(--mute); }
 .papers { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
 .paper { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 18px; align-items: center; }
 .thumb { display: block; line-height: 0; }
@@ -75,7 +78,6 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .paper__sum { font-size: .9rem; }
 .cite { font-size: .82rem; color: var(--mute); }
 .me { color: var(--ink); font-weight: 600; }
-.eq-note { display: block; font-size: .85em; }
 
 @media (max-width: 560px) {
   body { font-size: 17px; }
