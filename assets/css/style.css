@@ -75,7 +75,7 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .paper__sum { font-size: .9rem; }
 .cite { font-size: .82rem; color: var(--mute); }
 .me { color: var(--ink); font-weight: 600; }
-.eq-note { display: block; font-size: .85em; }
+.eq-note { display: block; margin-top: 6px; font-size: .85em; }
 
 @media (max-width: 560px) {
   body { font-size: 17px; }
