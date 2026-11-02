@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="A multi-hop question answered in one pass without spelling out the hops; accuracy falls with more hops, much faster from weights than from context">
+<style>
+svg{--t-bg:#f6f7f8; --t-soft:#ebeef0; --t-ink:#2b2f35; --t-mute:#7d848c; --t-wire:#cfd4d9; --t-wall:#dcdfe3; --t-teal:#2a8b80; --t-orange:#d47b22; --t-tile:#ffffff; --serif:"Source Serif 4",Georgia,"Times New Roman",serif; --ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+@media (prefers-color-scheme: dark){svg{--t-bg:#1a1c1f; --t-soft:#23272b; --t-ink:#d3d6da; --t-mute:#8a9198; --t-wire:#3a3f45; --t-wall:#2c3035; --t-teal:#52b9ac; --t-orange:#ec9a48; --t-tile:#24282d;}}
+.t-bg{fill:var(--t-bg)}
+.t-soft{fill:var(--t-soft)}
+.t-node{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-teal line{stroke:var(--t-teal)} .t-teal polygon{fill:var(--t-teal)}
+.t-orange line{stroke:var(--t-orange)} .t-orange polygon{fill:var(--t-orange)}
+.t-mute-arrow line{stroke:var(--t-mute)} .t-mute-arrow polygon{fill:var(--t-mute)}
+.t-q{fill:var(--t-orange); font:600 15px/1 var(--serif)}
+.t-label{fill:var(--t-mute); font:500 9.5px/1 var(--ui); letter-spacing:.02em}
+.t-label--small{font-size:8.5px; font-style:italic}
+.t-bubble{fill:none; stroke:var(--t-mute)}
+.t-text{stroke:var(--t-teal)}
+.t-wire{stroke:var(--t-wire)}
+.t-hot{stroke:var(--t-teal)}
+.t-teal-fill{fill:var(--t-teal)}
+.t-grid{fill:none; stroke:var(--t-ink)}
+.t-op line{stroke:var(--t-ink)}
+.t-wall{fill:var(--t-wall)}
+.t-surface{stroke:var(--t-mute)}
+.t-solvent{fill:var(--t-teal); opacity:.38}
+.t-path{fill:none; stroke:var(--t-mute); opacity:.9}
+.t-bond{fill:none; stroke:var(--t-ink)}
+.t-bead{fill:var(--t-orange); stroke:var(--t-bg); stroke-width:.8}
+
+.t-wire-ink{fill:none; stroke:var(--t-mute)}
+.t-ink-fill{fill:var(--t-ink)}
+.t-box{fill:var(--t-bg); stroke:var(--t-ink)}
+.t-op-mute line{stroke:var(--t-mute)}
+.t-lattice{fill:var(--t-wire)}
+.t-act{font:italic 600 10px/1 var(--serif)}
+.t-act--r{fill:var(--t-teal)} .t-act--f{fill:var(--t-orange)}
+.t-digit{fill:var(--t-ink); font:600 8px/1 var(--ui)}
+.t-digit--on{fill:var(--t-bg)}
+.t-liquid{fill:var(--t-teal); opacity:.15}
+.t-tank{fill:none; stroke:var(--t-ink)}
+.t-tube{fill:var(--t-wall); stroke:var(--t-ink)}
+.t-meniscus{fill:none; stroke:var(--t-teal)}
+
+.t-tile{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-tile-ghost{fill:none; stroke:var(--t-mute)}
+.t-state{fill:var(--t-tile); stroke:var(--t-ink)}
+.t-arc-teal{stroke:var(--t-teal)}
+.t-arc-orange{stroke:var(--t-orange)}
+.t-wire-line{fill:none; stroke:var(--t-wire)}
+.t-patch{fill:var(--t-teal); opacity:.22}
+
+.t-bubble-solid{fill:var(--t-tile); stroke:var(--t-mute)}
+.t-outline{fill:none; stroke:var(--t-ink)}
+
+.t-ans{fill:var(--t-tile); stroke:var(--t-orange)}
+.t-q--small{font-size:10.5px}
+.t-latent{fill:var(--t-tile); stroke:var(--t-mute)}
+.t-dot--teal{fill:var(--t-teal); stroke:var(--t-bg); stroke-width:.8}
+.t-head-orange{fill:var(--t-orange)}
+.t-key{font:600 8.5px/1 var(--ui); letter-spacing:.01em}
+.t-key--teal{fill:var(--t-teal)} .t-key--orange{fill:var(--t-orange)}
+</style>
+<rect class="t-bg" x="0" y="0" width="160" height="100"/><path class="t-arc-teal" d="M12,66 Q22.0,42 32,66" stroke-width="2.3" stroke-linecap="round" fill="none"/><path class="t-arc-teal" d="M32,66 Q42.0,42 52,66" stroke-width="2.3" stroke-linecap="round" fill="none"/><path class="t-arc-teal" d="M52,66 Q59.589546463675475,42 69.2,60.3" stroke-width="2.3" stroke-linecap="round" fill="none"/><path class="t-arc-orange" d="M14,62.4 Q46.0,-13 72.75,52.56" stroke-width="2.3" stroke-linecap="round" fill="none"/><polygon class="t-head-orange" points="74.60,57.10 69.30,52.57 75.22,50.15"/><text class="t-label t-label--small" x="46" y="13" text-anchor="middle">one pass</text><circle class="t-state" cx="12" cy="66" r="4.2" stroke-width="1.4"/><circle class="t-latent" cx="32" cy="66" r="3.7" stroke-width="1.2" stroke-dasharray="2.1 1.5"/><circle class="t-latent" cx="52" cy="66" r="3.7" stroke-width="1.2" stroke-dasharray="2.1 1.5"/><circle class="t-ans" cx="74" cy="66" r="7.5" stroke-width="1.3" stroke-dasharray="2.8 1.9"/><text class="t-q" x="74" y="70.8" text-anchor="middle" style="font-size:13px">?</text><path class="t-wire-ink" d="M93,12 V76 H153" stroke-width="1.1"/><line class="t-wire-ink" x1="99" y1="76" x2="99" y2="78.5" stroke-width="1"/><line class="t-wire-ink" x1="115" y1="76" x2="115" y2="78.5" stroke-width="1"/><line class="t-wire-ink" x1="131" y1="76" x2="131" y2="78.5" stroke-width="1"/><line class="t-wire-ink" x1="147" y1="76" x2="147" y2="78.5" stroke-width="1"/><polyline class="t-arc-orange" points="99,48.0 115,64.0 131,68.5 147,69.5" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle class="t-bead" cx="99" cy="48.0" r="2.7"/><circle class="t-bead" cx="115" cy="64.0" r="2.7"/><circle class="t-bead" cx="131" cy="68.5" r="2.7"/><circle class="t-bead" cx="147" cy="69.5" r="2.7"/><polyline class="t-arc-teal" points="99,22.0 115,23.5 131,30.0 147,46.0" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle class="t-dot--teal" cx="99" cy="22.0" r="2.7"/><circle class="t-dot--teal" cx="115" cy="23.5" r="2.7"/><circle class="t-dot--teal" cx="131" cy="30.0" r="2.7"/><circle class="t-dot--teal" cx="147" cy="46.0" r="2.7"/><text class="t-key t-key--teal" x="99" y="15.5">context</text><text class="t-key t-key--orange" x="119.5" y="59.5">weights</text><text class="t-label" x="43" y="93" text-anchor="middle">implicit hops</text><text class="t-label" x="123" y="93" text-anchor="middle">accuracy</text></svg>
