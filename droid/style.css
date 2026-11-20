@@ -1,0 +1,247 @@
+/* Droid's site: white, ink, one accent for Droid: Dash's periwinkle, as in the app. Each section says one thing, mostly in
+   pictures. */
+:root {
+  --bg: #ffffff;
+  --ink: #121212;
+  --ink-2: #47463f;
+  --ink-3: #8b8a83;
+  --line: #e9e8e3;
+  --panel: #f5f4f0;
+  --brand: #5a5fd6;        /* Dash's deep periwinkle: buttons, marks (white text on it reads at 5:1) */
+  --brand-hover: #4c51c6;
+  --brand-body: #a5adff;   /* his body */
+  --brand-pale: #eceeff;   /* his pale: the tint behind Droid's column */
+  --display: "Bricolage Grotesque", "IBM Plex Sans", system-ui, sans-serif;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --pad: clamp(16px, 4vw, 40px);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink-2); font: 18px/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img, video { display: block; max-width: 100%; }
+a { color: inherit; }
+b { color: var(--ink); font-weight: 600; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--pad); }
+h1, h2 { margin: 0; color: var(--ink); font-family: var(--display); font-weight: 700; letter-spacing: -0.035em; text-wrap: balance; }
+h1 { font-size: clamp(50px, 13vw, 104px); line-height: .96; letter-spacing: -0.045em; }   /* the slogan */
+h2 { font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; }
+section { padding: clamp(80px, 11vw, 140px) 0 0; text-align: center; }
+.sub { max-width: 620px; margin: 20px auto 0; font-size: clamp(19px, 1.8vw, 22px); text-wrap: balance; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+
+/* buttons: Droid's own periwinkle, so "Get Droid" is the one thing on the page that stands out */
+.btn { display: inline-flex; align-items: center; height: 50px; padding: 0 26px; border-radius: 999px; background: var(--brand); color: #fff;
+  font: 700 16.5px var(--sans); text-decoration: none; white-space: nowrap; box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 8px 18px -8px rgba(74,80,200,.6);
+  transition: background .15s, transform .15s, box-shadow .15s; }
+.btn:hover { background: var(--brand-hover); transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 12px 24px -10px rgba(74,80,200,.7); }
+.btn.small { height: 38px; padding: 0 17px; font-size: 15px; }
+.btn.big { height: 62px; padding: 0 36px; font-size: 19px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.ctas { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 18px; margin-top: 36px; }
+
+/* top bar */
+.top { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.86); backdrop-filter: saturate(1.3) blur(12px); -webkit-backdrop-filter: saturate(1.3) blur(12px); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 1320px; }   /* lines up with the hero */
+.brand { display: flex; align-items: center; gap: 10px; font: 800 24px var(--display); color: var(--ink); text-decoration: none; letter-spacing: -0.045em; }
+.logo { width: 32px; height: 32px; flex: none; border-radius: 23%; }
+/* the little Dash as Droid's mark (dash.js, live): in the top bar, the chat and the table's Droid column */
+canvas.mini { display: block; flex: none; border-radius: 0; box-shadow: none; }
+.brand canvas.mini { width: 34px; height: 42px; margin: -6px -2px 0 0; position: relative; top: -3px; }   /* his body a hair below the wordmark's capitals' centre */
+
+/* hero: the line, one sentence, the button, the loop (the ad's story). Side by side on wide screens, the loop cropped square. */
+.hero { padding-top: clamp(36px, 6vw, 80px); }
+.hero-grid { display: grid; gap: clamp(28px, 4vw, 48px); max-width: 1320px; }
+.lede { max-width: 520px; margin: 20px auto 0; font-size: clamp(20px, 1.9vw, 24px); line-height: 1.45; text-wrap: balance; }
+.hero .ctas { margin-top: 30px; }
+.loop { margin: 0 auto; width: 100%; max-width: 560px; }
+.loop video { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }   /* the loop is square (4:5 on phones) */
+@media (min-width: 960px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; text-align: left; }
+  .hero h1 { font-size: clamp(62px, 6.2vw, 96px); }
+  .lede { margin-left: 0; }
+  .hero .ctas { justify-content: flex-start; }
+  .loop { max-width: none; }
+}
+/* the square cut's phone shadow reaches its bottom edge: fade that edge into the page, so no line shows */
+@media (min-width: 701px) { .loop video { -webkit-mask-image: linear-gradient(to bottom, #000 96.5%, transparent);
+  mask-image: linear-gradient(to bottom, #000 96.5%, transparent); } }
+@media (max-width: 700px) { .loop video { aspect-ratio: 4 / 5; } }
+
+/* any app: a phone's home screen, clean: a status bar, 4 x 5 apps (each whole, with its name), a dock. Dash hops about on
+   the apps (scenes.js, a canvas over the screen), each pressing down as he lands. Copy beside it; phone on the left on wide screens. */
+.duo { display: grid; gap: clamp(36px, 5vw, 80px); justify-content: center; align-items: center; }
+@media (min-width: 860px) {
+  .duo { grid-template-columns: auto minmax(0, 470px); text-align: left; }
+  .duo .home { order: -1; }
+  .duo .sub { margin-left: 0; }
+}
+.device.home { margin: 0 auto; width: clamp(264px, 23vw, 300px); }
+@media (max-width: 760px) { .device.home { width: min(68vw, 272px); } }
+.home .screen { container-type: inline-size; background: linear-gradient(170deg, #e4e6ff 0%, #efedfb 45%, #f9f3f1 100%); }
+/* Android (Pixel): status bar with the time on the left, a punch-hole camera, wifi/signal/battery; "At a glance";
+   round icons with names; a dock row with no plate; the search pill; the gesture bar */
+.sbar { position: absolute; left: 7.5%; right: 7%; top: 2.2%; height: 4%; display: flex; justify-content: space-between; align-items: center;
+  font: 500 12.5px var(--sans); color: #1f1f24; }
+.sbar .cam { position: absolute; left: 50%; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: #0d0d10;
+  box-shadow: 0 0 0 1.5px rgba(0,0,0,.08); }
+.sbar .sys { display: flex; gap: 3px; align-items: center; }
+.sbar svg { width: 13px; height: 13px; fill: #1f1f24; }
+.app { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-width: 0;
+  background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.app .ic { position: relative; display: block; line-height: 0; }
+.app:focus-visible { outline: none; }
+.app:focus-visible img { box-shadow: 0 0 0 2.5px var(--brand); }
+.app img { width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 0 0 .5px rgba(0,0,0,.06);
+  transition: box-shadow .3s; transform-origin: 50% 100%; }
+.app span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 500 10.5px/1.2 var(--sans); color: #2c2b30; }
+/* the app drawer (a Pixel's): the search bar, then every app A to Z, four to a row, scrolling slowly under it (scenes.js
+   moves it, endlessly; Dash hops about on the apps) */
+.drawer .screen { background: #f4f2fa; }
+.dsearch { position: absolute; left: 6.5%; right: 6.5%; top: 8.4%; height: 6%; border-radius: 999px; background: #e7e4f1; display: flex;
+  align-items: center; gap: 3cqw; padding: 0 5.5cqw; font: 400 min(15px, 5cqw)/1 var(--sans); color: #55535f; z-index: 1; }
+.dsearch svg { width: min(18px, 6.2cqw); height: min(18px, 6.2cqw); fill: #55535f; }
+.dview { position: absolute; left: 0; right: 0; top: 16%; bottom: 3%; overflow: clip; touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%); }   /* the rows fade in and out at the edges */
+.dlist { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 27cqw; padding: 1.5cqw 2.5cqw 0; will-change: transform; }
+.home .nav { position: absolute; left: 50%; bottom: 1.6%; width: 30%; height: 4px; margin-left: -15%; border-radius: 2px; background: rgba(31,31,36,.55); }
+.hopper { position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; pointer-events: none; }
+.app.press img { animation: press .6s cubic-bezier(.25,.7,.25,1); }
+@keyframes press { 0% { transform: none; } 22% { transform: scale(1.06, .86); } 55% { transform: scale(.98, 1.04); } 100% { transform: none; } }
+
+/* tasks: tabs of real runs (labelled "Pick a task", and drawn as buttons, so they read as something to press). Left,
+   Droid's chat: your request, then what the agent said as it went, on the run's real clock; right, as in the app,
+   Droid's own screen through the run framed by Dash (dash.js draws the frame, his notch and eyes on a canvas over the
+   video, with a hole for the screen; the video is clipped to the same corner radius). */
+.pick { margin: 30px 0 0; font: 600 13px var(--sans); letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
+.tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 14px; }
+.tab { position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 9px; border: 1px solid var(--line);
+  border-radius: 999px; background: #fff; color: var(--ink); font: 600 15.5px var(--sans); cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  transition: background .25s, color .25s, border-color .25s, transform .2s, box-shadow .2s; }
+.tab:hover { border-color: #cdccc5; transform: translateY(-1px); box-shadow: 0 8px 18px -10px rgba(0,0,0,.25); }
+.tab .ic { display: flex; }
+.tab .ic img { width: 30px; height: 30px; border-radius: 23%; box-shadow: 0 0 0 1.5px #fff; }
+.tab .ic img + img { margin-left: -7px; }
+.tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.tab[aria-selected="true"] .ic img { box-shadow: 0 0 0 1.5px var(--ink); }
+.tab .bar { position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; transform-origin: left; transform: scaleX(0); background: var(--brand); }
+
+.stage { display: grid; grid-template-columns: minmax(0, 420px) auto; justify-content: center; align-items: center; gap: clamp(32px, 6vw, 88px);
+  margin-top: 56px; text-align: left; }
+/* a phone (the app drawer): a plain black frame */
+.device { position: relative; width: clamp(240px, 21vw, 280px); padding: 8px; border-radius: 42px; background: #101010;
+  box-shadow: 0 0 0 1px #2a2a2a inset, 0 40px 70px -40px rgba(0,0,0,.45), 0 10px 24px -14px rgba(0,0,0,.25); }
+.device .screen { border-radius: 34px; }
+/* its power key and volume rocker, on the right as on a Pixel */
+.device::before, .device::after { content: ""; position: absolute; right: -3px; width: 3px; border-radius: 0 2px 2px 0; background: #1c1c1e; }
+.device::before { top: 21%; height: 7%; }
+.device::after { top: 32%; height: 13%; }
+.screen { position: relative; overflow: hidden; border-radius: 26px; aspect-ratio: 720 / 1600; background: #f4f5fa; }
+.screen video { position: absolute; inset: 0; width: 100%; height: 100%; transition: opacity .28s ease; }
+.screen.swap video { opacity: 0; }
+/* Droid's screen: Dash's frame (an edge of 5 px round the video; the canvas reaches past it for his notch, hook and glow) */
+.side { margin: 0; display: flex; flex-direction: column; align-items: center; }
+.frame { position: relative; width: clamp(240px, 21vw, 280px); padding: 5px; }
+.frame::before { content: ""; position: absolute; inset: 0; border-radius: 32px; box-shadow: 0 40px 70px -40px rgba(42,30,110,.5), 0 12px 26px -16px rgba(42,30,110,.3); }
+.frame .dash { position: absolute; left: -56px; right: -56px; top: -72px; bottom: -24px; width: calc(100% + 112px); height: calc(100% + 96px); pointer-events: none; }
+.caption { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; color: var(--ink); font: 600 13px var(--sans); white-space: nowrap; }
+.caption::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--brand-body); box-shadow: 0 0 0 3px rgba(165,173,255,.35); }
+.caption em { font-style: normal; font-weight: 500; color: var(--ink-3); }
+.caption em::before { content: "·"; margin: 0 6px 0 -1px; }
+
+.chat { display: flex; flex-direction: column; gap: 22px; }
+.you, .droid { transition: opacity .28s ease; }
+.stage.swap .you, .stage.swap .droid { opacity: 0; }
+.you { align-self: flex-end; margin: 0; max-width: 92%; padding: 13px 18px; border-radius: 22px 22px 6px 22px; background: var(--panel); color: var(--ink);
+  font: 500 17.5px/1.4 var(--sans); }
+.droid .head { display: flex; align-items: center; gap: 9px; font-size: 15px; }
+.droid .head canvas.mini { width: 24px; height: 30px; margin-top: -4px; }
+.droid .head b { font-weight: 600; }
+.timer { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.used { display: flex; flex-wrap: wrap; gap: 6px; height: 30px; margin-top: 12px; }
+.used img { width: 30px; height: 30px; border-radius: 23%; box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
+.thoughts { position: relative; margin-top: 16px; height: 204px; overflow: hidden; display: flex; flex-direction: column; gap: 10px; }
+.thoughts li { flex: none; position: relative; padding-left: 20px; font-size: 16.5px; line-height: 1.42; color: var(--ink-3); transition: color .4s; }
+.thoughts li::before { content: ""; position: absolute; left: 1px; top: .55em; width: 7px; height: 7px; border-radius: 50%; background: #cfcec8; transition: background .4s, box-shadow .4s; }
+.thoughts li.now { color: var(--ink); }
+.thoughts li.now::before { background: var(--brand-body); box-shadow: 0 0 0 3px rgba(165,173,255,.38); }
+.done { margin: 12px 0 0; min-height: 30px; display: flex; align-items: flex-start; gap: 10px; font: 600 17px/1.3 var(--sans); color: var(--ink);
+  opacity: 0; transform: translateY(6px); transition: opacity .45s ease, transform .45s ease; }
+.done.on { opacity: 1; transform: none; }
+.done::before { content: ""; flex: none; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 12.4l3.3 3.3 6.8-7' fill='none' stroke='%23ffffff' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+@media (max-width: 760px) {   /* the request, the screen, then what it's doing now */
+  .tabs { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; margin: 32px calc(-1 * var(--pad)) 0; padding: 0 var(--pad) 4px; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { flex: none; }
+  .pick { margin-top: 24px; }
+  .stage { grid-template-columns: 1fr; gap: 0; margin-top: 26px; justify-items: center; }
+  .chat { display: contents; }
+  .you { order: 1; align-self: center; text-align: center; border-radius: 20px; font-size: 16px; padding: 11px 16px; margin-bottom: 30px; }
+  .stage .side { order: 2; margin-top: 44px; }
+  .stage .frame { width: min(58vw, 250px); }
+  .droid { order: 3; width: 100%; margin-top: 20px; }
+  .droid .head, .used { justify-content: center; }
+  .thoughts { height: 50px; margin-top: 8px; -webkit-mask-image: none; mask-image: none; }
+  .thoughts li { padding-left: 0; text-align: center; font-size: 15.5px; }
+  .thoughts li::before { display: none; }
+  .done { justify-content: center; margin-top: 2px; font-size: 16px; }
+}
+
+/* the rest at a glance: four tiles, two by two, an icon beside a title and one line each (one column on phones) */
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 940px; margin: 0 auto; }
+.tiles li { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 22px; align-items: center; padding: 26px 28px; border-radius: 22px;
+  background: var(--panel); text-align: left; }
+.tiles canvas { grid-row: span 2; width: 84px; height: 60px; }
+.tiles b { align-self: end; font: 700 clamp(20px, 2vw, 24px)/1.15 var(--display); letter-spacing: -0.02em; }
+.tiles span { align-self: start; margin-top: 5px; font-size: 16px; line-height: 1.38; color: var(--ink-2); }
+@media (max-width: 760px) { .tiles { grid-template-columns: 1fr; gap: 10px; } .tiles li { padding: 20px 20px; column-gap: 18px; } }
+
+
+/* compare: Droid and the best-known agents, a yes or no per row */
+.table { max-width: 980px; margin: 48px auto 0; }
+.tr { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(var(--n, 4), minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.tr > span { display: flex; align-items: center; justify-content: center; padding: 16px 8px; font-size: 16.5px; color: var(--ink); }
+.tr > span { flex-direction: column; gap: 5px; }
+.tr > span:first-child { flex-direction: row; justify-content: flex-start; text-align: left; padding-left: 0; font-weight: 500; }
+.th { border-top: 0; }
+.th > span { flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: var(--ink-2); line-height: 1.2; padding-bottom: 14px; }
+.th img, .th .logo { width: 40px; height: 40px; border-radius: 23%; box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
+.th canvas.mini { width: 36px; height: 44px; margin-top: -4px; box-shadow: none; border-radius: 0; }
+.tr .us { background: var(--brand-pale); }
+.th .us { border-radius: 16px 16px 0 0; color: var(--ink); padding-top: 16px; }
+.tr:last-child .us { border-radius: 0 0 16px 16px; }
+.yes, .no { display: inline-block; width: 26px; height: 26px; border-radius: 50%; }
+.yes { background: var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M7.5 13.4l3.6 3.6 7.4-7.6' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.no { background: #fde7e6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M9 9l8 8M17 9l-8 8' fill='none' stroke='%23e0383e' stroke-width='2.3' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.us .yes { background-color: var(--brand); }   /* Droid's own yes in its periwinkle; the others' in ink */
+.tr small { font-size: 13px; color: var(--ink-3); line-height: 1.25; text-align: center; }
+.notes { max-width: 980px; margin: 18px auto 0; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); text-align: left; }
+.notes a { color: inherit; }
+@media (max-width: 700px) {
+  .table { margin-left: calc(-1 * var(--pad) + 8px); margin-right: calc(-1 * var(--pad) + 8px); }
+  .tr { grid-template-columns: minmax(0, 1.25fr) repeat(var(--n, 4), minmax(0, 1fr)); }
+  .tr > span { padding: 12px 3px; font-size: 13.5px; }
+  .th > span { font-size: 11px; gap: 6px; }
+  .th img, .th .logo { width: 30px; height: 30px; }
+  .yes, .no { width: 22px; height: 22px; background-size: cover; }
+  .tr small { font-size: 10.5px; }
+}
+
+/* free: Dash himself, standing on the word; he watches your pointer and gets excited about the button */
+.free h2 { font-size: clamp(96px, 17vw, 210px); line-height: .92; letter-spacing: -0.05em; }
+.dash-free { display: block; width: 150px; height: 180px; margin: 0 auto -8px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+@media (max-width: 700px) { .dash-free { width: 120px; height: 144px; } }
+
+.free { padding-bottom: clamp(80px, 12vw, 140px); }
+.free .ctas { margin-top: 44px; }
+
+footer { border-top: 1px solid var(--line); padding: 28px 0 44px; font-size: 13.5px; color: var(--ink-3); }
+footer p { margin: 0; }
+footer b { color: var(--ink-2); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* on the home screen, the apps scale with the phone (it's smaller on phones) */
+.home .app img { width: min(50px, 17.6cqw); height: min(50px, 17.6cqw); }
+.home .app span { font-size: min(10.5px, 3.9cqw); }
+.home .app { gap: min(6px, 2cqw); }

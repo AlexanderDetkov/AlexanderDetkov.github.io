@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Droid: put your phone to work</title>
+<meta name="description" content="Droid is an AI that uses the apps on your Android phone for you, on a screen of its own: keep using your phone, or lock it and walk away. Your passwords stay on your phone. Free and open source, on the Claude or ChatGPT plan you already pay for.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="media/dash-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+<meta property="og:title" content="Droid. Put your phone to work.">
+<meta property="og:description" content="An AI that uses the apps on your Android phone for you. Free and open source.">
+<meta property="og:image" content="https://alexanderdetkov.github.io/droid/media/card.png">
+<meta property="og:url" content="https://alexanderdetkov.github.io/droid/">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alexanderdetkov.github.io/droid/media/card.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=52">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Droid">
+      <canvas class="logo mini" data-mini="header" aria-hidden="true"></canvas>
+      Droid
+    </a>
+    <a class="btn small" href="#get">Get Droid</a>
+  </div>
+</header>
+
+<main>
+  <!-- one glance: what it is, the three things that matter, the story on video -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Put your phone to&nbsp;work.</h1>
+        <p class="lede">An AI that uses your apps for you.</p>
+        <div class="ctas"><a class="btn" href="#get">Get Droid free</a></div>
+      </div>
+      <figure class="loop">
+        <video id="loop" muted playsinline loop preload="auto" aria-label="You ask Droid to fill out your dentist's new patient form. Dash, Droid's character, jumps out of your phone and becomes the frame of Droid's own screen. While you use Maps and then turn your phone off, Droid finds the dentist's email in Gmail, reads your insurance card in Photos, your details in Contacts, your allergies in Keep and your X-rays in Drive, fills in and submits the form in Chrome, and adds the confirmation to the appointment in Calendar. Your phone wakes to his notification: Done. Your form is in."></video>
+      </figure>
+    </div>
+  </section>
+
+  <!-- any app: the phone's app drawer, scrolling slowly and endlessly, with Dash hopping about on the apps -->
+  <section class="apps" id="apps">
+    <div class="wrap duo">
+      <div class="copy">
+        <h2>Droid uses any app on your phone.</h2>
+        <p class="sub">It taps and types the way you do, so it works with every app.</p>
+      </div>
+      <div class="device home drawer">
+        <div class="screen">
+          <div class="sbar" aria-hidden="true"><b>10:24</b><i class="cam"></i><span class="sys">
+            <svg viewBox="0 0 24 24"><path d="M12 20.5 1.2 8.4A16 16 0 0 1 12 4.3a16 16 0 0 1 10.8 4.1Z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M2.5 21.5h19v-19Z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M9.5 2h5v2H17a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h2.5Z"/></svg></span></div>
+          <div class="dsearch" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 9.5 16a6.5 6.5 0 0 0 4.2-1.6l.3.3v.8l5 5 1.5-1.5Zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"/></svg><span>Search apps</span></div>
+          <div class="dview"><div class="dlist" id="dlist"></div></div>
+          <i class="nav" aria-hidden="true"></i>
+          <canvas class="hopper" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- real runs: what it was thinking, live, and Droid's screen framed by Dash (on the right, as in the hero) -->
+  <section class="tasks" id="tasks">
+    <div class="wrap">
+      <h2>Hand it the busywork.</h2>
+      <p class="pick">Pick a task</p>
+      <div class="tabs" role="tablist" aria-label="Pick a task" id="tabs"></div>
+      <div class="stage" id="stage">
+        <div class="chat">
+          <p class="you" id="task-ask"></p>
+          <div class="droid">
+            <div class="head"><canvas class="mini" data-mini="chat" aria-hidden="true"></canvas><b>Droid</b><span class="timer" id="task-timer"></span></div>
+            <div class="used" id="task-used" aria-label="Apps it used"></div>
+            <ol class="thoughts" id="task-thoughts" aria-live="off"></ol>
+            <p class="done" id="task-done"></p>
+          </div>
+        </div>
+        <!-- Droid's screen is framed by Dash, as in the app: his eyes in the notch, following the agent's taps -->
+        <figure class="side">
+          <div class="frame" id="frame">
+            <div class="screen"><video id="task-video" muted playsinline preload="auto"></video></div>
+            <canvas class="dash" aria-hidden="true"></canvas>
+          </div>
+          <figcaption class="caption">Droid's screen<em>real run, sped up</em></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- the rest, at a glance, each acted out by Dash -->
+  <section class="glance">
+    <div class="wrap">
+      <ul class="tiles">
+        <li><canvas data-scene="background" aria-hidden="true"></canvas><b>Never ties up your phone</b><span>Keep using it, or lock it and walk away.</span></li>
+        <li><canvas data-scene="several" aria-hidden="true"></canvas><b>Several tasks at once</b><span>Hand it your whole to-do list.</span></li>
+        <li><canvas data-scene="voice" aria-hidden="true"></canvas><b>Ask in a second</b><span>Hold the power button and talk.</span></li>
+        <li><canvas data-scene="phone" aria-hidden="true"></canvas><b>No Droid servers</b><span>Your passwords never leave your phone.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="compare" id="compare">
+    <div class="wrap">
+      <h2>Droid does it all.</h2>
+      <div class="table" role="table" aria-label="Droid compared with Gemini, ChatGPT and Grok Bot">
+        <div class="tr th" role="row"><span role="columnheader"></span>
+          <span role="columnheader" class="us"><canvas class="logo mini" data-mini="table" aria-hidden="true"></canvas>Droid</span>
+          <span role="columnheader"><img src="media/apps/gemini.webp" alt="">Gemini</span>
+          <span role="columnheader"><img src="media/apps/chatgpt.webp" alt="">ChatGPT</span>
+          <span role="columnheader"><img src="media/apps/grok.webp" alt="">Grok Bot</span></div>
+        <div class="tr" role="row"><span role="rowheader">Any app on your phone</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i><small>select apps</small></span><span><i class="no" aria-label="No"></i><small>websites</small></span><span><i class="no" aria-label="No"></i><small>websites</small></span></div>
+        <div class="tr" role="row"><span role="rowheader">Passwords stay on your phone</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i><small>their cloud</small></span><span><i class="no" aria-label="No"></i><small>their cloud</small></span></div>
+        <div class="tr" role="row"><span role="rowheader">Your choice of AI</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span></div>
+        <div class="tr" role="row"><span role="rowheader">Open source</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="free" id="get">
+    <div class="wrap">
+      <canvas class="dash-free" id="dash-free" role="img" aria-label="Dash, Droid's character"></canvas>
+      <h2>Free.</h2>
+      <p class="sub">No subscription. It runs on the Claude or ChatGPT plan you already pay&nbsp;for.</p>
+      <div class="ctas"><a class="btn big" id="get-link" href="#">Download Droid</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Droid</b> · Apache-2.0 · App names and icons belong to their owners.</p>
+  </div>
+</footer>
+
+<script src="dash.js?v=6"></script>
+<script src="app.js?v=46"></script>
+<script src="scenes.js?v=15"></script>
+</body>
+</html>
