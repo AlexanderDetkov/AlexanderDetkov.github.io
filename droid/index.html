@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Droid: put your phone to work</title>
-<meta name="description" content="Droid is an AI that uses the apps on your Android phone for you, on a screen of its own: keep using your phone, or lock it and walk away. Your passwords stay on your phone. Free and open source, on the Claude or ChatGPT plan you already pay for.">
+<meta name="description" content="Droid is an AI that uses the apps on your Android phone for you, on a screen of its own: keep using your phone, or lock it and walk away. Your passwords stay on your phone. Free and open source: start with free AI models, no account needed, or sign in with ChatGPT or Claude.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="media/dash-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
@@ -16,8 +16,8 @@
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://alexanderdetkov.github.io/droid/media/card.png">
-<link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="style.css?v=52">
+<link rel="stylesheet" href="fonts/google-sans-flex.css">
+<link rel="stylesheet" href="style.css?v=74">
 </head>
 <body>
 
@@ -41,7 +41,7 @@
         <div class="ctas"><a class="btn" href="#get">Get Droid free</a></div>
       </div>
       <figure class="loop">
-        <video id="loop" muted playsinline loop preload="auto" aria-label="You ask Droid to fill out your dentist's new patient form. Dash, Droid's character, jumps out of your phone and becomes the frame of Droid's own screen. While you use Maps and then turn your phone off, Droid finds the dentist's email in Gmail, reads your insurance card in Photos, your details in Contacts, your allergies in Keep and your X-rays in Drive, fills in and submits the form in Chrome, and adds the confirmation to the appointment in Calendar. Your phone wakes to his notification: Done. Your form is in."></video>
+        <video id="loop" muted playsinline loop preload="auto" aria-label="You type a request into Droid: fill out my dentist&#39;s new patient form. Dash, Droid&#39;s character, says On it and jumps out of your phone, and Droid&#39;s own screen opens out of him, in his ring, with Dash perched on top, watching, as his steps fill your phone. While you read your mom&#39;s texts, scroll your photos and then lock your phone, Droid finds the dentist&#39;s email in Gmail, reads your details in Contacts, your allergies in Keep, your insurance card in Photos and your X-rays in Drive, and fills in the form in Chrome. Then Dash hops back, and your phone wakes to his question: Your form is ready. Send it? You tap Send: Sent. Your form is in."></video>
       </figure>
     </div>
   </section>
@@ -68,27 +68,32 @@
     </div>
   </section>
 
-  <!-- real runs: what it was thinking, live, and Droid's screen framed by Dash (on the right, as in the hero) -->
+  <!-- real runs, as the app shows one while Dash works: what you asked, Dash's line (his words, the grey line under them),
+       and his screen in his ring -->
   <section class="tasks" id="tasks">
     <div class="wrap">
-      <h2>Hand it the busywork.</h2>
+      <h2>Hand it the whole job.</h2>
       <p class="pick">Pick a task</p>
       <div class="tabs" role="tablist" aria-label="Pick a task" id="tabs"></div>
       <div class="stage" id="stage">
         <div class="chat">
           <p class="you" id="task-ask"></p>
-          <div class="droid">
-            <div class="head"><canvas class="mini" data-mini="chat" aria-hidden="true"></canvas><b>Droid</b><span class="timer" id="task-timer"></span></div>
-            <div class="used" id="task-used" aria-label="Apps it used"></div>
-            <ol class="thoughts" id="task-thoughts" aria-live="off"></ol>
-            <p class="done" id="task-done"></p>
+          <div class="work">
+          <div class="line">
+            <canvas class="dash-line" id="task-dash" aria-hidden="true"></canvas>
+            <p class="said" id="task-said" aria-live="off"></p>
+            <p class="steps"><i class="busy" aria-hidden="true"></i><span id="task-timer"></span></p>
+          </div>
+          <!-- his steps as he goes, each in the app he did it in (the run's own, from its transcript) -->
+          <ol class="steplist" id="task-steps" aria-label="Dash's steps"></ol>
+          <!-- done: what he came back with, plainly, and where he checked it -->
+          <div class="result" id="task-result" aria-live="polite"><div class="card"></div></div>
           </div>
         </div>
-        <!-- Droid's screen is framed by Dash, as in the app: his eyes in the notch, following the agent's taps -->
+        <!-- his screen, in his ring as the app shows it: each tap a ripple where it landed, his eyes going to it -->
         <figure class="side">
           <div class="frame" id="frame">
             <div class="screen"><video id="task-video" muted playsinline preload="auto"></video></div>
-            <canvas class="dash" aria-hidden="true"></canvas>
           </div>
           <figcaption class="caption">Droid's screen<em>real run, sped up</em></figcaption>
         </figure>
@@ -97,6 +102,47 @@
   </section>
 
   <!-- the rest, at a glance, each acted out by Dash -->
+  <!-- the same request on each side, "Split the Tahoe trip". Other assistants can't see your apps: one asks who went and
+       what was spent, you type it all out, and it answers in a page of text (Claude Sonnet 5.5 as a plain chat assistant,
+       its words as it wrote them; see README). Droid: Dash's line and the app the agent made for it. -->
+  <section class="answers" id="answers">
+    <div class="wrap">
+      <h2>No walls of text.</h2>
+      <div class="vs">
+        <div class="side-them">
+          <p class="label">Other assistants</p>
+          <p class="you">Split the Tahoe trip</p>
+          <div class="chatlog" aria-label="Another assistant's reply: it can't see your apps, so it asks for every expense; you type them out; it answers with a table and the math, 225 words in all.">
+<div class="a"><p>I can help split it. I don&#x27;t have the trip details yet, so I need a few things:</p>
+<ol>
+<li><b>Who&#x27;s going?</b> Names, or just the headcount.</li>
+<li><b>What were the expenses?</b> Each item with its amount and who paid (cabin/hotel, gas, groceries, lift tickets, restaurants, etc.).</li>
+<li><b>Any uneven shares?</b> For example, someone who skipped a day, didn&#x27;t ski, or had a separate room.</li>
+</ol>
+<p>You can paste it in any format, like a list or a rough copy from your notes. I&#x27;ll work out who owes whom and keep the number of payments to a minimum.</p></div>
+<p class="q">it was me, Sam and Priya. cabin was 612, I paid that. dinner 187.42 also me. Sam got groceries 148.38 and firewood and beer for 41 cash. Priya paid kayaks 135 and gas 64.20. oh and Sam already sent me 100 for the cabin deposit</p>
+<div class="a"><p>Here&#x27;s the split, assuming everything is divided equally three ways.</p>
+<p><b>Total spent: $1,188.00, so $396.00 each</b></p>
+<table><tr><th>Person</th><th>Paid</th><th>Share</th><th>Net</th></tr><tr><td>You</td><td>$799.42 (cabin $612 + dinner $187.42)</td><td>$396.00</td><td>+$403.42</td></tr><tr><td>Sam</td><td>$189.38 (groceries $148.38 + firewood/beer $41)</td><td>$396.00</td><td>-$206.62</td></tr><tr><td>Priya</td><td>$199.20 (kayaks $135 + gas $64.20)</td><td>$396.00</td><td>-$196.80</td></tr></table>
+<p>Sam already sent you $100, so that&#x27;s accounted for.</p>
+<p><b>Who pays whom</b></p>
+<ul>
+<li><b>Sam pays you $106.62</b> ($206.62 minus the $100 already sent)</li>
+<li><b>Priya pays you $196.80</b></li>
+</ul>
+<p>That&#x27;s $303.42 total coming to you, and nobody else needs to pay each other.</p>
+<p>If anyone shouldn&#x27;t split something evenly, like the beer or a skipped activity, tell me and I&#x27;ll redo it.</p></div>
+          </div>
+        </div>
+        <div class="side-us">
+          <p class="label">Droid</p>
+          <p class="you">Split the Tahoe trip</p>
+          <div class="answer"><img src="media/answers/droid-tahoe.webp" width="822" height="822" alt="Droid's answer. Dash: You fronted the most, Sam and Priya owe you. A photo from the trip, $1,188 split $396 each, then $106.62 from Sam and $196.80 from Priya, each with a Venmo button."></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="glance">
     <div class="wrap">
       <ul class="tiles">
@@ -111,16 +157,18 @@
   <section class="compare" id="compare">
     <div class="wrap">
       <h2>Droid does it all.</h2>
-      <div class="table" role="table" aria-label="Droid compared with Gemini, ChatGPT and Grok Bot">
+      <div class="table" role="table" aria-label="Droid compared with ChatGPT, Claude, Gemini, Meta Muse and Grok Bot" style="--n: 6">
         <div class="tr th" role="row"><span role="columnheader"></span>
           <span role="columnheader" class="us"><canvas class="logo mini" data-mini="table" aria-hidden="true"></canvas>Droid</span>
-          <span role="columnheader"><img src="media/apps/gemini.webp" alt="">Gemini</span>
-          <span role="columnheader"><img src="media/apps/chatgpt.webp" alt="">ChatGPT</span>
-          <span role="columnheader"><img src="media/apps/grok.webp" alt="">Grok Bot</span></div>
-        <div class="tr" role="row"><span role="rowheader">Any app on your phone</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i><small>select apps</small></span><span><i class="no" aria-label="No"></i><small>websites</small></span><span><i class="no" aria-label="No"></i><small>websites</small></span></div>
-        <div class="tr" role="row"><span role="rowheader">Passwords stay on your phone</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i><small>their cloud</small></span><span><i class="no" aria-label="No"></i><small>their cloud</small></span></div>
-        <div class="tr" role="row"><span role="rowheader">Your choice of AI</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span></div>
-        <div class="tr" role="row"><span role="rowheader">Open source</span><span class="us"><i class="yes" aria-label="Yes"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span><span><i class="no" aria-label="No"></i></span></div>
+          <span role="columnheader"><img src="media/apps/chatgpt.webp" alt="" width="40" height="40">ChatGPT</span>
+          <span role="columnheader"><img src="media/apps/claude.webp" alt="" width="40" height="40">Claude</span>
+          <span role="columnheader"><img src="media/apps/gemini.webp" alt="" width="40" height="40">Gemini</span>
+          <span role="columnheader"><img src="media/apps/muse.webp" alt="" width="40" height="40">Meta Muse</span>
+          <span role="columnheader"><img src="media/apps/grok.webp" alt="" width="40" height="40">Grok Bot</span></div>
+        <div class="tr" role="row"><span role="rowheader">Any app on your phone</span><span role="cell" class="us"><i class="yes" aria-label="Yes"></i></span><span role="cell"><i class="no" aria-label="No"></i><small>websites</small></span><span role="cell"><i class="no" aria-label="No"></i><small>websites</small></span><span role="cell"><i class="no" aria-label="No"></i><small>select apps</small></span><span role="cell"><i class="no" aria-label="No"></i><small>websites</small></span><span role="cell"><i class="no" aria-label="No"></i><small>a few apps</small></span></div>
+        <div class="tr" role="row"><span role="rowheader">Passwords stay on your phone</span><span role="cell" class="us"><i class="yes" aria-label="Yes"></i></span><span role="cell"><i class="no" aria-label="No"></i><small>their cloud</small></span><span role="cell"><i class="no" aria-label="No"></i><small>their cloud</small></span><span role="cell"><i class="yes" aria-label="Yes"></i></span><span role="cell"><i class="no" aria-label="No"></i><small>their cloud</small></span><span role="cell"><i class="no" aria-label="No"></i><small>their cloud</small></span></div>
+        <div class="tr" role="row"><span role="rowheader">Your choice of AI</span><span role="cell" class="us"><i class="yes" aria-label="Yes"></i></span><span role="cell"><i class="no" aria-label="No"></i><small>GPT only</small></span><span role="cell"><i class="no" aria-label="No"></i><small>Claude only</small></span><span role="cell"><i class="no" aria-label="No"></i><small>Gemini only</small></span><span role="cell"><i class="no" aria-label="No"></i><small>Muse only</small></span><span role="cell"><i class="no" aria-label="No"></i><small>it picks</small></span></div>
+        <div class="tr" role="row"><span role="rowheader">Open source</span><span role="cell" class="us"><i class="yes" aria-label="Yes"></i></span><span role="cell"><i class="no" aria-label="No"></i></span><span role="cell"><i class="no" aria-label="No"></i></span><span role="cell"><i class="no" aria-label="No"></i></span><span role="cell"><i class="no" aria-label="No"></i></span><span role="cell"><i class="no" aria-label="No"></i></span></div>
       </div>
     </div>
   </section>
@@ -129,7 +177,7 @@
     <div class="wrap">
       <canvas class="dash-free" id="dash-free" role="img" aria-label="Dash, Droid's character"></canvas>
       <h2>Free.</h2>
-      <p class="sub">No subscription. It runs on the Claude or ChatGPT plan you already pay&nbsp;for.</p>
+      <p class="sub">No subscription. Start with free AI models, no account needed, or sign in with ChatGPT or&nbsp;Claude.</p>
       <div class="ctas"><a class="btn big" id="get-link" href="#">Download Droid</a></div>
     </div>
   </section>
@@ -142,7 +190,7 @@
 </footer>
 
 <script src="dash.js?v=6"></script>
-<script src="app.js?v=46"></script>
+<script src="app.js?v=62"></script>
 <script src="scenes.js?v=15"></script>
 </body>
 </html>

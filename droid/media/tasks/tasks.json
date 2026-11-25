@@ -753,6 +753,178 @@
     0.5,
     0.928
    ]
+  ],
+  "steps": [
+   [
+    0.15,
+    "Read recent SMS messages",
+    "messages"
+   ],
+   [
+    0.37,
+    "Open WhatsApp",
+    "whatsapp"
+   ],
+   [
+    0.59,
+    "Open Lisbon crew chat",
+    "whatsapp"
+   ],
+   [
+    2.67,
+    "Scroll up in chat",
+    "whatsapp"
+   ],
+   [
+    3.64,
+    "Scroll down slightly to read Jo's message",
+    "whatsapp"
+   ],
+   [
+    4.34,
+    "List contacts with phone numbers",
+    "contacts"
+   ],
+   [
+    4.56,
+    "Read calendar events for this week",
+    "calendar"
+   ],
+   [
+    4.78,
+    "Get climbing and design review times",
+    "calendar"
+   ],
+   [
+    5.0,
+    "List contact phones and emails",
+    "contacts"
+   ],
+   [
+    5.22,
+    "SMS threads with Jo, Sam, Priya",
+    "messages"
+   ],
+   [
+    6.86,
+    "Open Priya's WhatsApp chat",
+    "whatsapp"
+   ],
+   [
+    7.67,
+    "Scroll up in Priya chat",
+    "whatsapp"
+   ],
+   [
+    9.54,
+    "Search WhatsApp messages for scheduling and diet info",
+    "whatsapp"
+   ],
+   [
+    9.76,
+    "Open Signal",
+    "signal"
+   ],
+   [
+    10.47,
+    "Open Sam's Signal chat",
+    "signal"
+   ],
+   [
+    10.9,
+    "Scroll up Sam's Signal chat",
+    "signal"
+   ],
+   [
+    11.9,
+    "Scroll down to the skipped messages",
+    "signal"
+   ],
+   [
+    12.78,
+    "Open Instagram saved posts",
+    "instagram"
+   ],
+   [
+    14.79,
+    "Dismiss popup and open profile",
+    "instagram"
+   ],
+   [
+    15.62,
+    "Open hamburger menu",
+    "instagram"
+   ],
+   [
+    16.17,
+    "Open Saved collections",
+    "instagram"
+   ],
+   [
+    16.53,
+    "Open LA eats collection",
+    "instagram"
+   ],
+   [
+    18.27,
+    "Open first saved post",
+    "instagram"
+   ],
+   [
+    18.71,
+    "Scroll saved posts and extract text",
+    "instagram"
+   ],
+   [
+    23.31,
+    "Launch OpenTable",
+    "opentable"
+   ],
+   [
+    25.81,
+    "Tap Retry in OpenTable",
+    "opentable"
+   ],
+   [
+    26.5,
+    "Search OpenTable for Kismet",
+    "opentable"
+   ],
+   [
+    27.79,
+    "Open Kismet LA listing",
+    "opentable"
+   ],
+   [
+    28.56,
+    "Search OpenTable for Hippo",
+    "opentable"
+   ],
+   [
+    29.96,
+    "Search OpenTable for Saffy's",
+    "opentable"
+   ],
+   [
+    30.65,
+    "Open Saffy's listing",
+    "opentable"
+   ],
+   [
+    31.42,
+    "Open party/date picker",
+    "opentable"
+   ],
+   [
+    31.71,
+    "Select party of 4 and Tomorrow",
+    "opentable"
+   ],
+   [
+    31.98,
+    "Confirm party/date selection",
+    "opentable"
+   ]
   ]
  },
  {
@@ -1056,6 +1228,413 @@
     0.5,
     0.479
    ]
+  ],
+  "steps": [
+   [
+    0.15,
+    "Query calendar events for the coming weeks",
+    "calendar"
+   ],
+   [
+    0.37,
+    "Open Gmail",
+    "gmail"
+   ],
+   [
+    0.95,
+    "Search Gmail for trip-related emails",
+    "gmail"
+   ],
+   [
+    2.82,
+    "Open hotel email",
+    "gmail"
+   ],
+   [
+    3.4,
+    "Scroll down hotel email",
+    "gmail"
+   ],
+   [
+    4.93,
+    "Open wedding weekend details thread",
+    "gmail"
+   ],
+   [
+    5.72,
+    "Scroll wedding thread",
+    "gmail"
+   ],
+   [
+    7.03,
+    "Open Trailhead trip confirmation email",
+    "gmail"
+   ],
+   [
+    7.79,
+    "Scroll flight confirmation",
+    "gmail"
+   ],
+   [
+    9.12,
+    "Search text messages for trip-related mentions",
+    "messages"
+   ],
+   [
+    11.22,
+    "Read cat sitter thread and look up contact",
+    "messages"
+   ],
+   [
+    13.32,
+    "Open WhatsApp",
+    "whatsapp"
+   ]
+  ]
+ },
+ {
+  "id": "discord",
+  "label": "Pick a weekend",
+  "apps": [
+   "discord",
+   "calendar",
+   "messages",
+   "whatsapp"
+  ],
+  "ask": "Which Bishop weekend works for me? Answer the crew on Discord.",
+  "lines": [
+   [
+    1.79,
+    "I'm in Discord, looking for the Bishop trip thread so I can compare the dates against your calendar."
+   ],
+   [
+    3.89,
+    "Found the Bishop thread in #trips."
+   ],
+   [
+    5.99,
+    "Options are Dec 4–6, Dec 11–13, Jan 8–10."
+   ],
+   [
+    8.09,
+    "Calendar: Dec 4–6 has Priya's ceramics show (Sat) and Mom's birthday (Sun)."
+   ],
+   [
+    10.19,
+    "WhatsApp confirms that Priya's ceramics show (Sat Dec 5) is something they've been working toward, so Dec 4–6 is out."
+   ],
+   [
+    12.29,
+    "The channel (#trips) and text are correct."
+   ]
+  ],
+  "done": "Posted in #trips: Dec 11–13 or Jan 8–10.",
+  "doneAt": 13.24,
+  "clock": [
+   [
+    0.0,
+    4.2
+   ],
+   [
+    0.09,
+    4.4
+   ],
+   [
+    0.21,
+    5.0
+   ],
+   [
+    0.32,
+    5.1
+   ],
+   [
+    0.42,
+    5.2
+   ],
+   [
+    0.53,
+    5.4
+   ],
+   [
+    0.6,
+    5.5
+   ],
+   [
+    0.71,
+    5.6
+   ],
+   [
+    0.83,
+    5.8
+   ],
+   [
+    1.05,
+    6.1
+   ],
+   [
+    1.17,
+    11.1
+   ],
+   [
+    1.39,
+    11.4
+   ],
+   [
+    1.51,
+    12.3
+   ],
+   [
+    1.71,
+    12.6
+   ],
+   [
+    1.83,
+    19.0
+   ],
+   [
+    1.94,
+    19.1
+   ],
+   [
+    2.2,
+    19.5
+   ],
+   [
+    2.32,
+    24.0
+   ],
+   [
+    2.43,
+    24.1
+   ],
+   [
+    2.55,
+    25.2
+   ],
+   [
+    2.68,
+    25.4
+   ],
+   [
+    2.8,
+    29.9
+   ],
+   [
+    3.06,
+    30.3
+   ],
+   [
+    3.17,
+    30.4
+   ],
+   [
+    3.28,
+    30.6
+   ],
+   [
+    3.38,
+    34.5
+   ],
+   [
+    3.89,
+    34.5
+   ],
+   [
+    3.91,
+    35.2
+   ],
+   [
+    4.55,
+    36.2
+   ],
+   [
+    4.56,
+    39.5
+   ],
+   [
+    5.99,
+    39.5
+   ],
+   [
+    6.03,
+    57.5
+   ],
+   [
+    8.09,
+    57.5
+   ],
+   [
+    8.15,
+    83.6
+   ],
+   [
+    10.19,
+    83.6
+   ],
+   [
+    10.2,
+    86.3
+   ],
+   [
+    10.35,
+    86.5
+   ],
+   [
+    10.39,
+    86.6
+   ],
+   [
+    10.83,
+    87.2
+   ],
+   [
+    10.93,
+    90.8
+   ],
+   [
+    12.29,
+    90.8
+   ],
+   [
+    12.31,
+    91.3
+   ],
+   [
+    12.82,
+    92.1
+   ],
+   [
+    15.54,
+    100.1
+   ]
+  ],
+  "appsAt": [
+   [
+    0.0,
+    "discord"
+   ],
+   [
+    5.99,
+    "calendar"
+   ],
+   [
+    8.09,
+    "messages"
+   ],
+   [
+    8.12,
+    "signal"
+   ],
+   [
+    8.12,
+    "whatsapp"
+   ]
+  ],
+  "worked": 100,
+  "take": "t-discord-143517",
+  "taps": [
+   [
+    1.5,
+    0.828,
+    0.57
+   ],
+   [
+    1.71,
+    0.959,
+    0.03
+   ],
+   [
+    2.54,
+    0.551,
+    0.675
+   ],
+   [
+    2.69,
+    0.067,
+    0.03
+   ],
+   [
+    2.8,
+    0.319,
+    0.268
+   ],
+   [
+    10.2,
+    0.37,
+    0.951
+   ],
+   [
+    12.6,
+    0.89,
+    0.95
+   ]
+  ],
+  "steps": [
+   [
+    0.15,
+    "Launch Discord",
+    "discord"
+   ],
+   [
+    1.18,
+    "Dismiss dialog and open search",
+    "discord"
+   ],
+   [
+    1.81,
+    "Go back to the channel list",
+    "discord"
+   ],
+   [
+    2.32,
+    "Close popup and open channel list",
+    "discord"
+   ],
+   [
+    2.8,
+    "Open trips channel",
+    "discord"
+   ],
+   [
+    3.91,
+    "Scroll up in trips channel",
+    "discord"
+   ],
+   [
+    5.99,
+    "Query calendar events late Nov to mid Jan",
+    "calendar"
+   ],
+   [
+    6.21,
+    "List all calendar events",
+    "calendar"
+   ],
+   [
+    8.09,
+    "Search SMS for relevant date mentions",
+    "messages"
+   ],
+   [
+    8.31,
+    "Search SMS for December/January plans",
+    "messages"
+   ],
+   [
+    8.53,
+    "Search WhatsApp messages for relevant plans",
+    "whatsapp"
+   ],
+   [
+    10.2,
+    "Type reply into #trips message box",
+    "discord"
+   ],
+   [
+    12.35,
+    "Tap send",
+    "discord"
+   ]
   ]
  },
  {
@@ -1067,10 +1646,6 @@
   ],
   "ask": "I'm wiped. Order me dinner on DoorDash, something like what I usually get, under $35.",
   "lines": [
-   [
-    3.66,
-    "DoorDash shows no past orders on this account."
-   ],
    [
     6.89,
     "Six past orders."
@@ -2000,283 +2575,192 @@
     0.5,
     0.956
    ]
-  ]
- },
- {
-  "id": "discord",
-  "label": "Pick a weekend",
-  "apps": [
-   "discord",
-   "calendar",
-   "signal",
-   "whatsapp"
   ],
-  "ask": "Which Bishop weekend works for me? Answer the crew on Discord.",
-  "lines": [
+  "steps": [
    [
-    1.79,
-    "I'm in Discord, looking for the Bishop trip thread so I can compare the dates against your calendar."
+    0.15,
+    "Launch DoorDash",
+    "doordash"
    ],
    [
-    3.89,
-    "Found the Bishop thread in #trips."
-   ],
-   [
-    5.99,
-    "Options are Dec 4–6, Dec 11–13, Jan 8–10."
-   ],
-   [
-    8.09,
-    "Calendar: Dec 4–6 has Priya's ceramics show (Sat) and Mom's birthday (Sun)."
-   ],
-   [
-    10.19,
-    "WhatsApp confirms that Priya's ceramics show (Sat Dec 5) is something they've been working toward, so Dec 4–6 is out."
-   ],
-   [
-    12.29,
-    "The channel (#trips) and text are correct."
-   ]
-  ],
-  "done": "Posted in #trips: Dec 11–13 or Jan 8–10.",
-  "doneAt": 13.24,
-  "clock": [
-   [
-    0.0,
-    4.2
-   ],
-   [
-    0.09,
-    4.4
-   ],
-   [
-    0.21,
-    5.0
-   ],
-   [
-    0.32,
-    5.1
-   ],
-   [
-    0.42,
-    5.2
-   ],
-   [
-    0.53,
-    5.4
-   ],
-   [
-    0.6,
-    5.5
-   ],
-   [
-    0.71,
-    5.6
-   ],
-   [
-    0.83,
-    5.8
-   ],
-   [
-    1.05,
-    6.1
-   ],
-   [
-    1.17,
-    11.1
-   ],
-   [
-    1.39,
-    11.4
-   ],
-   [
-    1.51,
-    12.3
-   ],
-   [
-    1.71,
-    12.6
-   ],
-   [
-    1.83,
-    19.0
-   ],
-   [
-    1.94,
-    19.1
-   ],
-   [
-    2.2,
-    19.5
-   ],
-   [
-    2.32,
-    24.0
-   ],
-   [
-    2.43,
-    24.1
-   ],
-   [
-    2.55,
-    25.2
-   ],
-   [
-    2.68,
-    25.4
-   ],
-   [
-    2.8,
-    29.9
-   ],
-   [
-    3.06,
-    30.3
-   ],
-   [
-    3.17,
-    30.4
-   ],
-   [
-    3.28,
-    30.6
-   ],
-   [
-    3.38,
-    34.5
-   ],
-   [
-    3.89,
-    34.5
-   ],
-   [
-    3.91,
-    35.2
-   ],
-   [
-    4.55,
-    36.2
-   ],
-   [
-    4.56,
-    39.5
-   ],
-   [
-    5.99,
-    39.5
-   ],
-   [
-    6.03,
-    57.5
-   ],
-   [
-    8.09,
-    57.5
-   ],
-   [
-    8.15,
-    83.6
-   ],
-   [
-    10.19,
-    83.6
-   ],
-   [
-    10.2,
-    86.3
-   ],
-   [
-    10.35,
-    86.5
-   ],
-   [
-    10.39,
-    86.6
-   ],
-   [
-    10.83,
-    87.2
-   ],
-   [
-    10.93,
-    90.8
-   ],
-   [
-    12.29,
-    90.8
-   ],
-   [
-    12.31,
-    91.3
-   ],
-   [
-    12.82,
-    92.1
-   ],
-   [
-    15.54,
-    100.1
-   ]
-  ],
-  "appsAt": [
-   [
-    0.0,
-    "discord"
-   ],
-   [
-    5.99,
-    "calendar"
-   ],
-   [
-    8.09,
-    "messages"
-   ],
-   [
-    8.12,
-    "signal"
-   ],
-   [
-    8.12,
-    "whatsapp"
-   ]
-  ],
-  "worked": 100,
-  "take": "t-discord-143517",
-  "taps": [
-   [
-    1.5,
-    0.828,
-    0.57
-   ],
-   [
-    1.71,
-    0.959,
-    0.03
-   ],
-   [
-    2.54,
-    0.551,
-    0.675
-   ],
-   [
-    2.69,
-    0.067,
-    0.03
-   ],
-   [
-    2.8,
-    0.319,
-    0.268
-   ],
-   [
-    10.2,
     0.37,
-    0.951
+    "Tap Account again",
+    "doordash"
    ],
    [
-    12.6,
-    0.89,
-    0.95
+    0.59,
+    "Restart DoorDash",
+    "doordash"
+   ],
+   [
+    3.03,
+    "Tap Account",
+    "doordash"
+   ],
+   [
+    3.58,
+    "Open Orders",
+    "doordash"
+   ],
+   [
+    4.79,
+    "Open Gmail",
+    "gmail"
+   ],
+   [
+    5.26,
+    "Search Gmail for order receipts",
+    "gmail"
+   ],
+   [
+    5.85,
+    "Search Gmail for other delivery apps",
+    "gmail"
+   ],
+   [
+    6.43,
+    "Search DoorDash order confirmations",
+    "gmail"
+   ],
+   [
+    7.01,
+    "Read the two Sakura Sushi orders",
+    "gmail"
+   ],
+   [
+    9.24,
+    "Search DoorDash for Sakura Sushi",
+    "doordash"
+   ],
+   [
+    9.75,
+    "Tap recent search for Sakura",
+    "doordash"
+   ],
+   [
+    9.97,
+    "See rest of results",
+    "doordash"
+   ],
+   [
+    10.19,
+    "Search \"sakura\" on DoorDash",
+    "doordash"
+   ],
+   [
+    10.64,
+    "Search \"sakura sushi\"",
+    "doordash"
+   ],
+   [
+    11.34,
+    "Search DoorDash for Bowl and Bao",
+    "doordash"
+   ],
+   [
+    12.18,
+    "Search remaining past restaurants",
+    "doordash"
+   ],
+   [
+    12.64,
+    "Search sushi restaurants",
+    "doordash"
+   ],
+   [
+    14.7,
+    "Open Sushi & Grill L.A",
+    "doordash"
+   ],
+   [
+    15.3,
+    "Search menu for salmon",
+    "doordash"
+   ],
+   [
+    15.86,
+    "Tap in-store search",
+    "doordash"
+   ],
+   [
+    16.08,
+    "List salmon menu items",
+    "doordash"
+   ],
+   [
+    16.3,
+    "Scroll and collect menu items",
+    "doordash"
+   ],
+   [
+    16.52,
+    "Scroll full store menu",
+    "doordash"
+   ],
+   [
+    16.74,
+    "Open What the Fish and read menu",
+    "doordash"
+   ],
+   [
+    18.39,
+    "Continue scanning menu for salmon avocado",
+    "doordash"
+   ],
+   [
+    18.61,
+    "Search in-store for salmon avocado",
+    "doordash"
+   ],
+   [
+    19.03,
+    "Open Salmon Avocado Roll item",
+    "doordash"
+   ],
+   [
+    19.39,
+    "Add roll to cart",
+    "doordash"
+   ],
+   [
+    19.61,
+    "Tap search field",
+    "doordash"
+   ],
+   [
+    19.83,
+    "Search edamame in store",
+    "doordash"
+   ],
+   [
+    20.05,
+    "Clear and search edamame",
+    "doordash"
+   ],
+   [
+    20.39,
+    "Open Edamame item",
+    "doordash"
+   ],
+   [
+    21.09,
+    "Add edamame, close search, find cart",
+    "doordash"
+   ],
+   [
+    21.5,
+    "Open cart",
+    "doordash"
+   ],
+   [
+    22.26,
+    "Go to checkout and read it",
+    "doordash"
+   ],
+   [
+    22.68,
+    "Back out of payment picker and read checkout",
+    "doordash"
    ]
   ]
  }
