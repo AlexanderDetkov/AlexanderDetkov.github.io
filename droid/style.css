@@ -293,7 +293,18 @@ canvas.mini { display: block; flex: none; border-radius: 0; box-shadow: none; }
 @media (max-width: 700px) { .dash-free { width: 120px; height: 144px; } }
 
 .free { padding-bottom: clamp(80px, 12vw, 140px); }
-.free .ctas { margin-top: 44px; }
+/* the download: Droid as an app to install (its launcher icon, its name, Download), and its source on GitHub under it */
+.appcard { display: flex; align-items: center; gap: 18px; width: min(100%, 460px); margin: 44px auto 0; padding: 18px; border-radius: 28px; background: #fff; text-align: left;
+  box-shadow: 0 0 0 1px var(--line), 0 30px 60px -40px rgba(42,30,110,.4); }
+.appcard img { width: 76px; height: 76px; border-radius: 18px; flex: none; }
+.appcard .t { flex: 1; min-width: 0; }
+.appcard b { display: block; font: 700 26px/1.1 var(--display); letter-spacing: -.01em; }
+.appcard span { display: block; margin-top: 4px; font-size: 15px; color: var(--ink-3); white-space: nowrap; }
+.appcard .btn { height: 48px; padding: 0 22px; font-size: 17px; }
+.srclink { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; color: var(--ink-2); font: 600 16px var(--sans); text-decoration: none; }
+.srclink:hover { color: var(--ink); }
+.gh { width: 20px; height: 20px; flex: none; fill: currentColor; }
+@media (max-width: 520px) { .appcard { gap: 14px; padding: 14px; } .appcard img { width: 60px; height: 60px; border-radius: 15px; } .appcard b { font-size: 22px; } .appcard .btn { padding: 0 16px; } }
 
 footer { border-top: 1px solid var(--line); padding: 28px 0 44px; font-size: 13.5px; color: var(--ink-3); }
 footer p { margin: 0; }

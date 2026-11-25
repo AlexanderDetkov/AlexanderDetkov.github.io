@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://alexanderdetkov.github.io/droid/media/card.png">
 <link rel="stylesheet" href="fonts/google-sans-flex.css">
-<link rel="stylesheet" href="style.css?v=74">
+<link rel="stylesheet" href="style.css?v=75">
 </head>
 <body>
 
@@ -178,7 +178,13 @@
       <canvas class="dash-free" id="dash-free" role="img" aria-label="Dash, Droid's character"></canvas>
       <h2>Free.</h2>
       <p class="sub">No subscription. Start with free AI models, no account needed, or sign in with ChatGPT or&nbsp;Claude.</p>
-      <div class="ctas"><a class="btn big" id="get-link" href="#">Download Droid</a></div>
+      <!-- Droid as an app to install: its icon, its name, Download; the source on GitHub under it (links: app.js LINKS) -->
+      <div class="appcard">
+        <img src="media/dash-icon.svg" width="76" height="76" alt="">
+        <div class="t"><b>Droid</b><span>For Android · Free</span></div>
+        <a class="btn" id="get-link" href="#">Download</a>
+      </div>
+      <a class="srclink" id="source-link" href="#"><svg class="gh" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Open source on GitHub</a>
     </div>
   </section>
 </main>
@@ -190,7 +196,7 @@
 </footer>
 
 <script src="dash.js?v=6"></script>
-<script src="app.js?v=62"></script>
+<script src="app.js?v=63"></script>
 <script src="scenes.js?v=15"></script>
 </body>
 </html>

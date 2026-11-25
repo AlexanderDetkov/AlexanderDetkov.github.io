@@ -1,8 +1,9 @@
 // The hero loop, the app drawer, the task player (the app while Dash works: his line, his screen in his ring) and Dash at the
 // download link.
 (function () {
-  const LINKS = { apk: "#" };   // fill in when Droid's release page is public
+  const LINKS = { apk: "#", source: "#" };   // fill in at launch: the release's APK, and https://github.com/AlexanderDetkov/droid once it's public
   document.getElementById("get-link").href = LINKS.apk;
+  document.getElementById("source-link").href = LINKS.source;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const narrow = window.matchMedia("(max-width: 760px)").matches;
   const V = 50;
