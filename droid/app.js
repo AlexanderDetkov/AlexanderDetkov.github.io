@@ -6,7 +6,7 @@
   document.getElementById("source-link").href = LINKS.source;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const narrow = window.matchMedia("(max-width: 760px)").matches;
-  const V = 50;
+  const V = 51;
   // run while on screen
   const whileSeen = (el, on, off) => new IntersectionObserver(([e]) => (e.isIntersecting ? on() : off()), { threshold: 0.3 }).observe(el);
 
