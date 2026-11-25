@@ -1,7 +1,7 @@
 // The hero loop, the app drawer, the task player (the app while Dash works: his line, his screen in his ring) and Dash at the
 // download link.
 (function () {
-  const LINKS = { apk: "#", source: "#" };   // fill in at launch: the release's APK, and https://github.com/AlexanderDetkov/droid once it's public
+  const LINKS = { apk: "https://github.com/AlexanderDetkov/droid/releases/latest/download/droid-arm64.apk", source: "https://github.com/AlexanderDetkov/droid" };   // the latest release's phone APK (release.yml names it the same each time), and the source
   document.getElementById("get-link").href = LINKS.apk;
   document.getElementById("source-link").href = LINKS.source;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -51,7 +51,7 @@
   NAME.clock = "Clock"; NAME.splitwise = "Splitwise";
   const all = [...Object.keys(NAME)].sort((a, b) => NAME[a].localeCompare(NAME[b], "en", { sensitivity: "base" }));
   const DRAWER = all.slice(0, all.length - all.length % 4);
-  const icon = (id) => `<button class="app" type="button" data-id="${id}" aria-label="${NAME[id] || id}"><b class="ic"><img src="media/apps/${id}.webp" alt="" width="48" height="48" decoding="async" fetchpriority="low"></b><span>${NAME[id] || id}</span></button>`;
+  const icon = (id) => `<button class="app" type="button" tabindex="-1" data-id="${id}" aria-label="${NAME[id] || id}"><b class="ic"><img src="media/apps/${id}.webp" alt="" width="48" height="48" decoding="async" fetchpriority="low"></b><span>${NAME[id] || id}</span></button>`;
   const dlist = document.getElementById("dlist");
   if (dlist) dlist.innerHTML = DRAWER.map(icon).join("") + DRAWER.map(icon).join("");
 
